@@ -23,7 +23,8 @@ function listarPessoas() {
 
             $li.innerHTML =       "<td>" + dados.nome    + "</td>" +
                                   "<td>" + dados.dtnasc  + "</td>" +
-                                  "<td>" + dados.nota    + "</td>" ;
+                                  "<td>" + dados.nota    + "</td>" +
+                                  "<td>" + dados.url     + "</td>" ;
             
             userListUI.append($li);
 
