@@ -1,12 +1,4 @@
-
-
-
 listarPessoas();
-
-let inputNome = document.querySelector("#inputNome")
-let inputDNas = document.querySelector("#inputDtnasc")
-let inputTrel = document.querySelector("#inputTiporel")
-
 
 function listarPessoas() {
     const userListUI = document.getElementById("lista-pessoas");
@@ -24,7 +16,7 @@ function listarPessoas() {
             $li.innerHTML =       "<td>" + dados.nome    + "</td>" +
                                   "<td>" + dados.dtnasc  + "</td>" +
                                   "<td>" + dados.nota    + "</td>" +
-                                  "<td>" + dados.url     + "</td>" ;
+                                  "<td><a href='" + dados.url    + "'></a>"+dados.url+"</td>" ;
             
             userListUI.append($li);
 
