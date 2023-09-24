@@ -16,7 +16,7 @@ function listarPessoas() {
             $li.innerHTML =       "<td>" + dados.nome    + "</td>" +
                                   "<td>" + dados.dtnasc  + "</td>" +
                                   "<td>" + dados.nota    + "</td>" +
-                                  "<td><a href='" + dados.url    + "'></a>"+dados.url+"</td>" ;
+                                  "<td><a href='" + dados.url    + "'>"+dados.url+"</a></td>" ;
             
             userListUI.append($li);
 
