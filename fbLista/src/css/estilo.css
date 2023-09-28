@@ -51,3 +51,6 @@ h2
 .img16 {
     margin-top:16px;
 }
+.navbar{
+    position: absolute;
+}
