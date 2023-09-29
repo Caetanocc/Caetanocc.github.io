@@ -7,6 +7,8 @@ firebase.auth().onAuthStateChanged(function(user) {
         const photoURL = user.photoURL;
         let displayName = document.getElementById('displayName');
         let imageUser = document.querySelector("#imagemUser")
+        let image = document.getElementById("imageUser")
+
                       
         if (idisplayName !== null) displayName.innerText = 'Logado como ' + idisplayName
         else                       displayName.innerText = 'Logado como ' + email
