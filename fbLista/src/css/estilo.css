@@ -54,3 +54,14 @@ h2
 .navbar{
     position: absolute;
 }
+
+.ti{
+padding-left: 50%;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 70px;
+
+}
+
+.navv{
+    opacity: 1.0;
+}
