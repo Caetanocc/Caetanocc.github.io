@@ -54,3 +54,10 @@ h2
 .navbar{
     position: absolute;
 }
+.mob{
+    
+      body {
+          padding-bottom: 70px; 
+      }
+
+}
