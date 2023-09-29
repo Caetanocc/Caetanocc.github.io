@@ -8,3 +8,9 @@ body {
     justify-content: center;
     flex-direction: column;
 }
+#imageUser img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 2px solid white;
+}
