@@ -8,7 +8,7 @@ firebase.auth().onAuthStateChanged(function(user) {
         const email = user.email;
         const photoURL = user.photoURL;
 
-        if (idisplayName !== null) {
+        /*if (idisplayName !== null) {
             displayName.innerText = 'Logado como ' + idisplayName;
         } else {
             displayName.innerText = 'Logado como ' + email;
@@ -17,6 +17,7 @@ firebase.auth().onAuthStateChanged(function(user) {
         if (imageUser !== null) {
             imageUser.innerHTML = "<img src='" + photoURL + "'>";
         }
+        */
 
         // Armazenar o URL da foto do usuário no localStorage
         if (photoURL !== null) {
