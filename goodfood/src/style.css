@@ -130,3 +130,17 @@ font-weight: 600;
     width:60px !important;
 
 }
+.bg-danger {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+.bg-warning {
+    background-color: #ffc107;
+    color: #212529;
+  }
+  
+.bg-success {
+    background-color: #28a745;
+    color: #fff;
+  }
