@@ -33,8 +33,11 @@ function listarPedidos(){
                         tr.setAttribute("id", mesa)
 
                         tr.innerHTML = `
-                            <td>Mesa: ${mesa}</td>
-                            <td></td>
+                            <td>Mesa: ${mesa} </td>
+                            <td onclick="FecharMesa('${mesa}')"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                            <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z"/>
+                            <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z"/>
+                            </svg></td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -43,7 +46,7 @@ function listarPedidos(){
 
                         for (let kkey in childData){
 
-                           if(childData[kkey].status==2){
+                           if(childData[kkey].status>1){
 
                             console.log(childData[kkey].desc)
                             console.log(kkey)
@@ -57,18 +60,33 @@ function listarPedidos(){
                                 <td onclick=Green('${kkey}') ondblclick=Red('${kkey}')>${childData[kkey].desc}</td>
                                 <td>${childData[kkey].valor}</td>
                                 <td>${childData[kkey].status}</td>
-                                <td onclick="ExcluirDB('${kkey}')"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                                <td onclick="baixarItemDB('${mesa}','${kkey}')"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
                                 <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z"/>
                                 <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z"/>
                               </svg></td>
                             `
+                            listaProd.appendChild(tr)
+
+                            var table = document.querySelector('.table');
+                            var rows = table.querySelectorAll('tbody tr');
+
+                            // Loop através de cada linha da tabela
+                            rows.forEach(function (row) {
+                                // Obter o valor do status
+                                var status = row.querySelector('td:nth-child(4)').textContent;
+
+                                // Adicionar a classe CSS apropriada com base no valor do status
+                                if (status === '1') {
+                                    row.querySelector('td:nth-child(4)').classList.add('bg-danger');
+                                } else if (status === '2') {
+                                    row.querySelector('td:nth-child(4)').classList.add('bg-warning');
+                                } else if (status === '3') {
+                                    row.querySelector('td:nth-child(4)').classList.add('bg-success');
+                                }
+                            });
 
                             
-                             listaProd.appendChild(tr)
                            } 
-                           
-
-                           
                         }
                     }
                 }
@@ -94,7 +112,33 @@ function Red(chave){
     key.style.backgroundColor = 'red'
     
 }
-function ExcluirDB(chaves){
+
+function baixarItemDB(mesa,chave){
+    const url = `https://etec22s2-default-rtdb.firebaseio.com/goodfood/${mesa}/${chave}.json`
+    console.log(url)
+    const options = {
+        method: 'PATCH',
+        mode: 'cors',
+        headers: {
+        'Accept': 'application/json',
+        'content-type': 'application/json;charset=utf-8'
+        },
+        body: `{ "status": "3" }`,
+    }
+    fetch(url,options).then(
+        response => response.json()
+    ).then(
+        data => {
+            //console.log(data)
+            location.reload();
+        }
+
+    ) 
+
+}
+
+
+function ExcluirDB(chave){
     const url = `https://etec22s2-default-rtdb.firebaseio.com/goodfood.json`
 
     const options = {
@@ -111,7 +155,6 @@ function ExcluirDB(chaves){
     ).then(
         data => {
             if(data) {
-                
                 console.log(data)
                 listaProd.innerHTML = ""
 
@@ -121,15 +164,51 @@ function ExcluirDB(chaves){
 
                         console.log(mesa)
 
-    const url = `https://etec22s2-default-rtdb.firebaseio.com/goodfood/${mesa}/${chaves}.json`
+                        const url = `https://etec22s2-default-rtdb.firebaseio.com/goodfood/${mesa}/${chave}.json`
+                        const options = {
+                            method: 'DELETE',
+                            mode: 'cors',
+                            headers: {
+                            'Accept': 'application/json',
+                            'content-type': 'application/json;charset=utf-8'
+                            },
+                            
+                        }
+                        fetch(url,options).then(
+                            response => response.json()
+                        ).then(
+                            data => {
+                                console.log(data)
+                                location.reload();
+                            }
+
+                        ) 
+                    }     
+                }
+            }   
+        }
+        )
+}
+
+function FecharMesa(mesa){
+
+    if (!confirm('Fechar Mesa')){
+        return
+
+    }
+
+    console.log(mesa)
+
+    const url = `https://etec22s2-default-rtdb.firebaseio.com/goodfood/${mesa}.json`
     const options = {
         method: 'DELETE',
         mode: 'cors',
         headers: {
-          'Accept': 'application/json',
-          'content-type': 'application/json;charset=utf-8'
-        }
-      }
+        'Accept': 'application/json',
+        'content-type': 'application/json;charset=utf-8'
+        },
+        
+    }
     fetch(url,options).then(
         response => response.json()
     ).then(
@@ -137,6 +216,6 @@ function ExcluirDB(chaves){
             console.log(data)
             location.reload();
         }
-    ) }}
-}})
-}
+
+    ) 
+}     

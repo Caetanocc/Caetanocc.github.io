@@ -138,9 +138,7 @@ buttonadicionar.addEventListener('click',function atualizarItem(){
                             "valor": "${dados[chave].valor}",
                             "qtde": "1",
                             "status": "2" }`,
-                      }
-                
-                
+                    }
                 
                     fetch(url,options).then(
                         response => response.json()
