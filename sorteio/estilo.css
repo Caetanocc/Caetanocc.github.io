@@ -51,3 +51,8 @@ th {
 td {
   background-color: #004b09; /* Cor de fundo das células da tabela */
 }
+
+.img_al {
+  width:200px;
+  height:100px;
+}

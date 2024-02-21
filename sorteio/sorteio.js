@@ -1,4 +1,4 @@
-const amigos = 
+const alunos = 
 [
 ,'AGEU             ' 
 ,'ARTHUR           '
@@ -9,13 +9,13 @@ const amigos =
 ,'DANIEL           '
 ,'DIMITRY          '
 ,'ENZO             '
-,'ÉRIC             '
+,'ERIC             '
 ,'FERNANDO         '
 ,'GABRIEL_ARAUJO   '
 ,'GABRIEL_RODRIGUES'
-,'GLEYDCIANE       '
+,'GLEYCI           '
 ,'GUILHERME        '
-,'GUSTAVO_GONÇALVES'
+,'GUSTAVO_GONCALVES'
 ,'GUSTAVO_SOARES   '
 ,'HUGO             '
 ,'JHOEL            '
@@ -36,21 +36,22 @@ const amigos =
 ,'VINICIUS_TAVARES  '
 ]
 
-amigos.sort()
+alunos.sort()
 
 let text = '<table id="t01"> ';
 
-amigos.forEach( (element, index) => {
+alunos.forEach( (element, index) => {
     seq = index+1
     text += "<tr><td>" + seq + "</td>";
-    text += "<td>" + element + "</td>";
+    text += "<td>" + element + "</td>"
+    text += '<td><img class="img_al" src="' + element + '.gif" alt="' + element + '"';
     text += "</tr>";
 });
 
 text += "</table>";
 document.getElementById("lista").innerHTML = text;
 
-// let qtdeAmigos = amigos.length;
+// let qtdealunos = alunos.length;
 
 let btn = document.querySelector("#btnSortear")
 btn.addEventListener('click', sortear)
@@ -58,18 +59,16 @@ btn.addEventListener('click', sortear)
 let sorteados = [];
 
 function numero_aleatorio() {
-    let qtdeAmigos = amigos.length;
-    //let aleatorio = Math.floor(Math.random() * qtdeAmigos);
+    let qtdealunos = alunos.length;
+    //let aleatorio = Math.floor(Math.random() * qtdealunos);
 
-    for (i=0;i<qtdeAmigos;i++){
-        let aleatorio = Math.floor(Math.random() * qtdeAmigos);
+    for (i=0;i<qtdealunos;i++){
+        let aleatorio = Math.floor(Math.random() * qtdealunos);
         if (sorteados.indexOf(aleatorio) == -1) {
             sorteados.push(aleatorio);
             return aleatorio
         }
     }
-
-
 }
 
 function sortear() {
@@ -80,7 +79,8 @@ function sortear() {
     sorteados.forEach( element  => {
         seq = element+1
         text += "<tr><td>" + seq + "</td>";
-        text += "<td>" + amigos[element] + "</td>";
+        text += "<td>" + alunos[element] + "</td>";
+        text += '<td><img class="img_al" src="' + element + '.gif" alt="' + element + '"';
         text += "</tr>";
     });
     
@@ -89,10 +89,11 @@ function sortear() {
 
     text = '<table id="t01"> ';
 
-    amigos.forEach( (element, index) => {
+    alunos.forEach( (element, index) => {
         seq = index+1
         text += "<tr><td>" + seq + "</td>";
         text += "<td>" + element + "</td>";
+        text += '<td><img class="img_al" src="' + element + '.gif" alt="' + element + '"';
         text += "</tr>";
     });
     
@@ -104,7 +105,7 @@ function sortear() {
 
 function mostrarSorteado(sorteado) {
     let x = document.getElementById("snackbar");
-    x.innerHTML = amigos[sorteado]
+    x.innerHTML = alunos[sorteado]
     x.className = "show";
     setTimeout(function() { x.className = x.className.replace("show", ""); }, 3000);
 }    
