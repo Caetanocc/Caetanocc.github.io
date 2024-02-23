@@ -81,7 +81,7 @@ function sortear() {
         seq = element+1
         text += "<tr><td>" + seq + "</td>";
         text += "<td>" + alunos[element] + "</td>";
-        text += '<td><img class="img_al" src="' + element + '.gif" alt="' + element + '"';
+        text += '<td><img class="img_al" src="' + alunos[element] + '.gif" alt="' + element + '"';
         text += "</tr>";
     });
     
