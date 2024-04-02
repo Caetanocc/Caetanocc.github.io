@@ -45,12 +45,14 @@ alunos.forEach( (element, index) => {
     seq = index+1
     text += "<tr><td>" + seq + "</td>";
     text += "<td>" + element + "</td>"
-    text += '<td><img class="img_al" src="' + element + '.gif" alt="' + element + '"';
+    text += '<td><img class="img_al" src="' + element + '.gif" alt="' + element + '"' + "</td>";
+    text += '<td id="' + element + '" onClick="+ ' + element + '()"  >' + element + " </td>"
     text += "</tr>";
 });
 
 text += "</table>";
 document.getElementById("lista").innerHTML = text;
+
 
 // let qtdealunos = alunos.length;
 
@@ -94,7 +96,8 @@ function sortear() {
         seq = index+1
         text += "<tr><td>" + seq + "</td>";
         text += "<td>" + element + "</td>";
-        text += '<td><img class="img_al" src="' + element + '.gif" alt="' + element + '"';
+        text += '<td><img class="img_al" src="' + element + '.gif" alt="' + element + '"' + " </td>";
+        text += '<td id="' + element + '" onClick="+ ' + element + '()"  >' + element + " </td>"
         text += "</tr>";
     });
     
@@ -102,6 +105,8 @@ function sortear() {
     document.getElementById("lista").innerHTML = text;
 
     mostrarSorteado(sorteado)
+
+
 }
 
 function mostrarSorteado(sorteado) {
