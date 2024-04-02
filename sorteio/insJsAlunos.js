@@ -1,5 +1,5 @@
 function ALUNO() {
     linkGit = document.querySelector("#ALUNO")
-    linkGit.innerText = "https://caetanocc.github.io"
+    linkGit.innerText = "https://caetanocc.github.io/perfil"
 }
 

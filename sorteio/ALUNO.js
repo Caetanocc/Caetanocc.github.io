@@ -1,4 +1,4 @@
 function ALUNO() {
     linkGit = document.querySelector("#ALUNO")
-    linkGit.innerHtml = "https://caetanocc.github.io"
+    linkGit.innerHtml = "https://caetanocc.github.io/perfil"
 }
