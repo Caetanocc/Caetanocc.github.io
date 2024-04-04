@@ -3,11 +3,15 @@ function ALUNO() {
     linkGit.innerText = "https://caetanocc.github.io/perfil"
 }
 
+function MATHEUS() {
+    linkGit = document.querySelector("#MATHEUS")
+    linkGit.innerText = "https://matheusbrazetec.github.io/perfil"
+}
+
 function JOAO_MIGUEL() {
     linkGit = document.querySelector("#JOAO_MIGUEL")
     linkGit.innerHTML = '<a href="https://github.com/Jhonnjust">https://github.com/Jhonnjust</a>';
 }
-
 
 function LUCAS_BARROS() {
     linkGit = document.querySelector("#LUCAS_BARROS")
