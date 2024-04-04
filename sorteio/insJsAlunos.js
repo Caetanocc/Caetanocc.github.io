@@ -20,12 +20,12 @@ function FERNANDO() {
 
 function LUCAS_BARROS() {
   linkGit = document.querySelector("#LUCAS_BARROS")
-  linkGit.innerText = "https://github.com/LulzUser/LulzUser.git"
+  linkGit.innerHTML = '<a href="https://lulzuser.github.io/profile/">https://lulzuser.github.io/profile/</a>'
 }
 
 function JOAO_FELIPE() {
   linkGit = document.querySelector("#JOAO_FELIPE")
-  linkGit.innerHTML = '<a href="https://github.com/J0A0F3L1P3/mini-portfolio">https://github.com/J0A0F3L1P3/mini-portfolio</a>';
+    linkGit.innerHTML = "https://github.com/J0A0F3L1P3/mini-portfolio"
 }
 
 function LUCAS_GOMES() {
@@ -64,11 +64,6 @@ function LUCAS_RAFAEL() {
     linkGit.innerText = '<a href=" https://luellima.github.io/perfil/">https://luellima.github.io/perfil/</a>';
 }
 
-function ARTHUR() {
-    linkGit = document.querySelector('#ARTHUR')
-    linkGit.innerText = "https://github.com/arthurbdgomess/Caetanocc.github.io"
-}
-  
 function LUIZ() {
     linkGit = document.querySelector("#LUIZ")
     linkGit.innerText = '<a href="https://luizvictorino.github.io/perfil/">https://luizvictorino.github.io/perfil/</a>';
