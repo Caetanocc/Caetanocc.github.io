@@ -1,6 +1,8 @@
-function ALUNO() {
-    linkGit = document.querySelector("#ALUNO")
-    linkGit.innerText = "https://caetanocc.github.io/perfil"
+
+
+function FERNANDO() {
+    linkGit = document.querySelector("#FERNANDO")
+    linkGit.innerText = "https://fernandoroda.github.io/"
 }
 
 function LUCAS_RAFAEL() {
