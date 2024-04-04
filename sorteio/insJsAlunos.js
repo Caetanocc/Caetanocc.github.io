@@ -1,18 +1,6 @@
-
-
-function FERNANDO() {
-    linkGit = document.querySelector("#FERNANDO")
-    linkGit.innerText = "https://fernandoroda.github.io/"
-}
-
-function LUCAS_RAFAEL() {
-    linkGit = document.querySelector("#LUCAS_RAFAEL")
-    linkGit.innerText = "https://luellima.github.io/perfil/"
-}
-
-function LUIZ() {
-    linkGit = document.querySelector("#LUIZ")
-    linkGit.innerText = "https://luizvictorino.github.io/perfil/"
+function ALUNO() {
+    linkGit = document.querySelector("#ALUNO")
+    linkGit.innerText = "https://caetanocc.github.io/perfil"
 }
 
 function MATHEUS() {
@@ -22,7 +10,6 @@ function MATHEUS() {
 
 function JOAO_MIGUEL() {
     linkGit = document.querySelector("#JOAO_MIGUEL")
-    linkGit.innerText = "https://github.com/Jhonnjust"
     linkGit.innerHTML = '<a href="https://github.com/Jhonnjust">https://github.com/Jhonnjust</a>';
 }
 
@@ -33,17 +20,11 @@ function LUCAS_BARROS() {
 
 function JOAO_FELIPE() {
     linkGit = document.querySelector("#JOAO_FELIPE")
-    linkGit.innerText = "https://github.com/J0A0F3L1P3/mini-portfolio"
+    linkGit.innerHTML = "https://github.com/J0A0F3L1P3/mini-portfolio"
 }
 
-function GABRIEL_RODRIGUES() {
-    linkGit = document.querySelector("#GABRIEL_RODRIGUES")
-    linkGit.innerText = "https://github.com/Gabs01jpg"
-}
-
-function KAUE() {
-    linkGit = document.querySelector("#KAUE")
-    if(linkGit.innerText === "KAUE") linkGit.innerText = "https://github.com/Blkbirdz/Blkbirdz"
-    else linkGit.innerText = "KAUE"
+function GUILHERME() {
+    linkGit = document.querySelector("#GUILHERME")
+    linkGit.innerHTML = "https://github.com/Gui-Silva-95"
 }
 
