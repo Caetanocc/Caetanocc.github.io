@@ -59,4 +59,12 @@ function LUIZ() {
     linkGit.innerText = <a href=" https://luizvictorino.github.io/perfil/">https://luizvictorino.github.io/perfil/</a>';
 }
 
+function HUGO() {
+    linkGit = document.querySelector("#HUGO")
+    linkGit.innerHTML = '<a href="https://github.com/HugoAvsz">https://github.com/HugoAvsz</a>';
+}
 
+function VINICIUS_TAVARES() {
+    linkGit = document.querySelector("#VINICIUS_TAVARES")
+    linkGit.innerHTML = '<a href="https://tavaresvinicius.github.io/perfil/">https://tavaresvinicius.github.io/perfil/</a>'
+}
