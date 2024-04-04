@@ -17,3 +17,8 @@ function JOAO_FELIPE() {
     linkGit.innerText = "https://github.com/J0A0F3L1P3/mini-portfolio"
 }
 
+function JHOEL_RAYAN(){
+    linkGit = document.querySelector("#JHOEL_RAYAN")
+    linkGit.innerText = "<a href='https://github.com/JhoelSoliz'>https://github.com/JhoelSoliz</a>"
+}
+
