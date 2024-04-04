@@ -18,6 +18,6 @@ function JOAO_FELIPE() {
 }
     function VINICIUS_TAVARES() {
     linkGit = document.querySelector("#VINICIUS_TAVARES")
-    linkGit.innerHTML = "https://tavaresvinicius.github.io/perfil/"
+    linkGit.innerHTML = "<a href="https://tavaresvinicius.github.io/perfil/">https://tavaresvinicius.github.io/perfil/</a>"
 }
 
