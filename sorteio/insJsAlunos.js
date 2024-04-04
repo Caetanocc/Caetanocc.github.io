@@ -2,6 +2,6 @@
 
 function FERNANDO() {
     linkGit = document.querySelector("#FERNANDO")
-    linkGit.innerText = "https://fernandoroda.github.io/"
+    linkGit.innerHTML = '<a href=" https://fernandoroda.github.io/">https://fernandoroda.github.io</a>';
 }
 
