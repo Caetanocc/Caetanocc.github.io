@@ -34,8 +34,14 @@ function JOAO_FELIPE() {
     linkGit.innerText = "https://github.com/J0A0F3L1P3/mini-portfolio"
 }
 
+function GABRIEL_RODRIGUES() {
+    linkGit = document.querySelector("#GABRIEL_RODRIGUES")
+    linkGit.innerText = "https://github.com/Gabs01jpg"
+}
+
 function KAUE() {
     linkGit = document.querySelector("#KAUE")
     if(linkGit.innerText === "KAUE") linkGit.innerText = "https://github.com/Blkbirdz/Blkbirdz"
     else linkGit.innerText = "KAUE"
 }
+
