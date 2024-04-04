@@ -8,3 +8,9 @@ function JOAO_FELIPE() {
     linkGit.innerText = "https://github.com/J0A0F3L1P3/mini-portfolio"
 }
 
+function JULIO() {
+    linkGit = document.querySelector("#JULIO")
+    linkGit.innerText = "https://github.com/JCFerreir"
+}
+
+
