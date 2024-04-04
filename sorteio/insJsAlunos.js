@@ -23,3 +23,7 @@ function JOAO_FELIPE() {
     linkGit.innerText = "https://github.com/J0A0F3L1P3/mini-portfolio"
 }
 
+function ARTHUR() {
+    linkGit = document.querySelector('#ARTHUR')
+    linkGit.innerText = "https://github.com/arthurbdgomess/Caetanocc.github.io"
+}
