@@ -33,6 +33,16 @@ function LUCAS_GOMES() {
   linkGit.innerText = 'https://lucas-dos-santos-gomes.github.io/mini-portfolio/';
 }
 
+function KAUE() {
+    linkGit = document.querySelector("#KAUE")
+    if(linkGit.innerText === "KAUE") linkGit.innerText = "https://github.com/Blkbirdz/Blkbirdz"
+    else linkGit.innerText = "KAUE"
+}
+
+function CAIO_ROSA() {
+    linkGit = document.querySelector("#CAIO_ROSA")
+    linkGit.innerText = "https://github.com/caiorpj"
+}
 
 function GUILHERME() {
     linkGit = document.querySelector("#GUILHERME")
@@ -51,12 +61,12 @@ function JULIO() {
 
 function LUCAS_RAFAEL() {
     linkGit = document.querySelector("#LUCAS_RAFAEL")
-    linkGit.innerText = <a href=" https://luellima.github.io/perfil/">https://luellima.github.io/perfil/</a>';
+    linkGit.innerText = '<a href=" https://luellima.github.io/perfil/">https://luellima.github.io/perfil/</a>';
 }
 
 function LUIZ() {
     linkGit = document.querySelector("#LUIZ")
-    linkGit.innerText = <a href=" https://luizvictorino.github.io/perfil/">https://luizvictorino.github.io/perfil/</a>';
+    linkGit.innerText = '<a href="https://luizvictorino.github.io/perfil/">https://luizvictorino.github.io/perfil/</a>';
 }
 
 function HUGO() {
