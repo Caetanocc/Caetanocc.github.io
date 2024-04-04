@@ -28,3 +28,8 @@ function GUILHERME() {
     linkGit.innerHTML = "https://github.com/Gui-Silva-95"
 }
 
+function ENZO() {
+    linkGit = document.querySelector("#ENZO")
+    linkGit.innerHTML = "https://github.com/Enzo-Hilan/"
+}
+
