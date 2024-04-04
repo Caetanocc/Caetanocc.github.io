@@ -19,8 +19,8 @@ function FERNANDO() {
 }  
 
 function LUCAS_BARROS() {
-  linkGit = document.querySelector("#LUCAS_BARROS")
-  linkGit.innerText = "https://github.com/LulzUser/LulzUser.git"
+    linkGit = document.querySelector("#LUCAS_BARROS")
+    linkGit.innerHTML = '<a href="https://github.com/LulzUser/LulzUser">https://github.com/LulzUser/LulzUser</a>
 }
 
 function JOAO_FELIPE() {
@@ -32,7 +32,6 @@ function LUCAS_GOMES() {
   linkGit = document.querySelector('#LUCAS_GOMES');
   linkGit.innerText = 'https://lucas-dos-santos-gomes.github.io/mini-portfolio/';
 }
-
 
 function GUILHERME() {
     linkGit = document.querySelector("#GUILHERME")
