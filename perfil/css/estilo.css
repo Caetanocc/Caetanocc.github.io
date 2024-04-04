@@ -1,0 +1,62 @@
+nav 
+{
+    background: linear-gradient(to right, #00c79c, #2f00ff);
+}
+.carousel-item
+{
+    height: 600px;
+}
+img#imagepic{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 2px solid white;
+}
+h2
+{
+    display: flex;
+    justify-content: center;
+}
+.card-img-top
+{
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+}
+.btn-red 
+{
+    background-color: red !important;
+    color:rgba(255, 255, 255, 0.925) !important;
+}
+#outlook
+{
+    padding-top: 15px;
+}
+.contato
+{
+    padding-left: 15px;
+    margin: auto;
+    font-size: 20px; 
+}
+
+.floatWa {
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index:1000;
+}
+
+.img16 {
+    margin-top:16px;
+}
+.navbar{
+    position: absolute;
+}
