@@ -15,7 +15,7 @@ function JOAO_MIGUEL() {
 
 function LUCAS_BARROS() {
     linkGit = document.querySelector("#LUCAS_BARROS")
-    linkGit.innerText = "https://github.com/LulzUser/LulzUser.git"
+    linkGit.innerHTML = '<a href="https://github.com/LulzUser/LulzUser">https://github.com/LulzUser/LulzUser</a>
 }
 
 function JOAO_FELIPE() {
