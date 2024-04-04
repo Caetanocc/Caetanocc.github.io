@@ -39,3 +39,8 @@ function KAUE() {
     if(linkGit.innerText === "KAUE") linkGit.innerText = "https://github.com/Blkbirdz/Blkbirdz"
     else linkGit.innerText = "KAUE"
 }
+
+function CAIORPJ() {
+    linkGit = document.querySelector("#CAIORPJ")
+    linkGit.innerText = "https://github.com/caiorpj"
+}
