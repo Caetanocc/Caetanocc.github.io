@@ -1,6 +1,6 @@
 function ALUNO() {
-    linkGit = document.querySelector("#ALUNO")
-    linkGit.innerText = "https://caetanocc.github.io/perfil"
+  linkGit = document.querySelector("#ALUNO")
+  linkGit.innerText = "https://caetanocc.github.io/perfil"
 }
 
 function MATHEUS() {
@@ -9,9 +9,14 @@ function MATHEUS() {
 }
 
 function JOAO_MIGUEL() {
-    linkGit = document.querySelector("#JOAO_MIGUEL")
-    linkGit.innerHTML = '<a href="https://github.com/Jhonnjust">https://github.com/Jhonnjust</a>';
+  linkGit = document.querySelector("#JOAO_MIGUEL")
+  linkGit.innerHTML = '<a href="https://github.com/Jhonnjust">https://github.com/Jhonnjust</a>';
 }
+
+function FERNANDO() {
+    linkGit = document.querySelector("#FERNANDO")
+    linkGit.innerHTML = '<a href=" https://fernandoroda.github.io/">https://fernandoroda.github.io</a>';
+}  
 
 function LUCAS_BARROS() {
     linkGit = document.querySelector("#LUCAS_BARROS")
@@ -19,8 +24,13 @@ function LUCAS_BARROS() {
 }
 
 function JOAO_FELIPE() {
-    linkGit = document.querySelector("#JOAO_FELIPE")
+  linkGit = document.querySelector("#JOAO_FELIPE")
     linkGit.innerHTML = "https://github.com/J0A0F3L1P3/mini-portfolio"
+}
+
+function LUCAS_GOMES() {
+  linkGit = document.querySelector('#LUCAS_GOMES');
+  linkGit.innerText = 'https://lucas-dos-santos-gomes.github.io/mini-portfolio/';
 }
 
 function GUILHERME() {
@@ -37,5 +47,4 @@ function JULIO() {
     linkGit = document.querySelector("#JULIO")
     linkGit.innerText = "https://github.com/JCFerreir"
 }
-
 
