@@ -20,6 +20,7 @@ function MATHEUS() {
 
 function JOAO_MIGUEL() {
     linkGit = document.querySelector("#JOAO_MIGUEL")
+    linkGit.innerText = "https://github.com/Jhonnjust"
     linkGit.innerHTML = '<a href="https://github.com/Jhonnjust">https://github.com/Jhonnjust</a>';
 }
 
@@ -33,3 +34,8 @@ function JOAO_FELIPE() {
     linkGit.innerText = "https://github.com/J0A0F3L1P3/mini-portfolio"
 }
 
+function KAUE() {
+    linkGit = document.querySelector("#KAUE")
+    if(linkGit.innerText === "KAUE") linkGit.innerText = "https://github.com/Blkbirdz/Blkbirdz"
+    else linkGit.innerText = "KAUE"
+}
