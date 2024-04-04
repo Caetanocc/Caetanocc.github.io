@@ -40,7 +40,7 @@ function KAUE() {
     else linkGit.innerText = "KAUE"
 }
 
-function CAIORPJ() {
-    linkGit = document.querySelector("#CAIORPJ")
+function CAIO_ROSA() {
+    linkGit = document.querySelector("#CAIO_ROSA")
     linkGit.innerText = "https://github.com/caiorpj"
 }
