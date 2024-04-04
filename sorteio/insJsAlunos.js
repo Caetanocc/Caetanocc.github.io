@@ -13,6 +13,11 @@ function JOAO_MIGUEL() {
     linkGit.innerHTML = '<a href="https://github.com/Jhonnjust">https://github.com/Jhonnjust</a>';
 }
 
+function FERNANDO() {
+    linkGit = document.querySelector("#FERNANDO")
+    linkGit.innerHTML = '<a href=" https://fernandoroda.github.io/">https://fernandoroda.github.io</a>';
+}  
+
 function LUCAS_BARROS() {
     linkGit = document.querySelector("#LUCAS_BARROS")
     linkGit.innerText = "https://github.com/LulzUser/LulzUser.git"
