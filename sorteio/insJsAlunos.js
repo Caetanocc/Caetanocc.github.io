@@ -33,3 +33,9 @@ function GUSTAVO_GONCALVES() {
     linkGit.innerText = "https://github.com/Gugagla/Gugagla"
 }
 
+function JULIO() {
+    linkGit = document.querySelector("#JULIO")
+    linkGit.innerText = "https://github.com/JCFerreir"
+}
+
+
