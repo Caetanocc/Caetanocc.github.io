@@ -5,7 +5,7 @@ function ALUNO() {
 
 function MATHEUS() {
     linkGit = document.querySelector("#MATHEUS")
-    linkGit.innerText = "https://matheusbrazetec.github.io/perfil"
+    linkGit.innerText = '<a href="https://matheusbrazetec.github.io/perfil">https://matheusbrazetec.github.io/perfil</a>';
 }
 
 function JOAO_MIGUEL() {
