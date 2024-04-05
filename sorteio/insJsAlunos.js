@@ -103,3 +103,7 @@ function VINICIUS_TAVARES() {
     linkGit = document.querySelector("#VINICIUS_TAVARES")
     linkGit.innerHTML = '<a href="https://tavaresvinicius.github.io/perfil/">https://tavaresvinicius.github.io/perfil/</a>'
 }
+
+function RICARDO() { linkGit = document.querySelector("#RICARDO")
+linkGit.innerHTML = 'https://github.com/ricardorosa123'}
+
