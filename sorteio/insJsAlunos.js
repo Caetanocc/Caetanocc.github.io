@@ -120,12 +120,15 @@ function VINICIUS_TAVARES() {
     linkGit.innerHTML = '<a href="https://tavaresvinicius.github.io/perfil/">https://tavaresvinicius.github.io/perfil/</a>'
 }
 
+function RICARDO() { linkGit = document.querySelector("#RICARDO")
+linkGit.innerHTML = 'https://github.com/ricardorosa123'}
+
 function GUSTAVO_SOARES() {
     linkGit = document.querySelector("#GUSTAVO_SOARES")
     linkGit.innerText = '<a href="https://github.com/Shockraa">https://github.com/Shockraa</a>'
   }
 
-function GLEYCI_FERREIRA() {
-    linkGit = document.querySelector("#GLEYCI_FERREIRA")
+function GLEYCI() {
+    linkGit = document.querySelector("#GLEYCI")
     linkGit.innerText = "https://github.com/GleyciFerreira"
 }
