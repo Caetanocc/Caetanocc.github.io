@@ -74,6 +74,16 @@ function JULIO() {
      window.location.href = url;
 }
 
+function NICOLAS() {
+  linkGit = document.querySelector("#NICOLAS")
+  linkGit.innerHTML = '<a href="https://n1coolaz.github.io/">https://n1coolaz.github.io/</a>';
+}
+
+function VINICIUS_FERNANDES() {
+  linkGit = document.querySelector("#VINICIUS_FERNANDES")
+  linkGit.innerHTML = '<a href="https://github.com/uBittencourt">https://github.com/uBittencourt</a>';
+}
+
 function LUCAS_RAFAEL() {
     linkGit = document.querySelector("#LUCAS_RAFAEL")
     linkGit.innerHTML = '<a href=" https://luellima.github.io/perfil/">https://luellima.github.io/perfil/</a>';
