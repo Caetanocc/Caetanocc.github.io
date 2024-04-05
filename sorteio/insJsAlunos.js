@@ -53,7 +53,7 @@ function GUILHERME() {
 
 function GUSTAVO_GONCALVES() {
     linkGit = document.querySelector("#GUSTAVO_GONCALVES")
-    linkGit.innerHTML = '<a href="https://github.com/Gugagla/Gugagla>https://github.com/Gugagla/Gugagla</a>"'
+    linkGit.innerHTML = '<a href="https://github.com/Gugagla/Gugagla">https://github.com/Gugagla/Gugagla</a>'
 }
 
 function JHOEL_RAYAN(){
