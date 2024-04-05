@@ -74,6 +74,12 @@ function JULIO() {
      window.location.href = url;
 }
 
+function AGEU() {
+    linkGit = document.querySelector("#AGEU")
+    linkGit.innerHTML = '<a href="https://github.com/AgeuCDutra">https://github.com/AgeuCDutra</a>';
+
+}
+
 function NICOLAS() {
   linkGit = document.querySelector("#NICOLAS")
   linkGit.innerHTML = '<a href="https://n1coolaz.github.io/">https://n1coolaz.github.io/</a>';
