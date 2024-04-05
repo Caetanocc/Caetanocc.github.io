@@ -56,8 +56,8 @@ function GUSTAVO_GONCALVES() {
     linkGit.innerText = "https://github.com/Gugagla/Gugagla"
 }
 
-function JHOEL_RAYAN(){
-    linkGit = document.querySelector("#JHOEL_RAYAN")
+function JHOEL(){
+    linkGit = document.querySelector("#JHOEL")
     linkGit.innerText = "<a href='https://github.com/JhoelSoliz'>https://github.com/JhoelSoliz</a>"
 }
 
@@ -124,8 +124,3 @@ function GUSTAVO_SOARES() {
     linkGit = document.querySelector("#GUSTAVO_SOARES")
     linkGit.innerText = '<a href="https://github.com/Shockraa">https://github.com/Shockraa</a>'
   }
-
-function GLEYCI_FERREIRA() {
-    linkGit = document.querySelector("#GLEYCI_FERREIRA")
-    linkGit.innerText = "https://github.com/GleyciFerreira"
-}
