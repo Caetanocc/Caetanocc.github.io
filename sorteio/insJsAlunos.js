@@ -56,6 +56,11 @@ function GUSTAVO_GONCALVES() {
     linkGit.innerText = "https://github.com/Gugagla/Gugagla"
 }
 
+function JHOEL_RAYAN(){
+    linkGit = document.querySelector("#JHOEL_RAYAN")
+    linkGit.innerText = "<a href='https://github.com/JhoelSoliz'>https://github.com/JhoelSoliz</a>"
+}
+
 function ERIC() {
     linkGit = document.querySelector("#ERIC")
     linkGit.innerText = "https://github.com/BssEric/BssEric.github.io"
