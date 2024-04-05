@@ -48,3 +48,13 @@ function JULIO() {
     linkGit.innerText = "https://github.com/JCFerreir"
 }
 
+function NICOLAS() {
+  linkGit = document.querySelector("#NICOLAS")
+  linkGit.innerHTML = '<a href="https://n1coolaz.github.io/">https://n1coolaz.github.io/</a>';
+}
+
+function VINICIUS_FERNANDES() {
+  linkGit = document.querySelector("#VINICIUS_FERNANDES")
+  linkGit.innerHTML = '<a href="https://github.com/uBittencourt">https://github.com/uBittencourt</a>';
+}
+
