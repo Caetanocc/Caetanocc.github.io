@@ -5,7 +5,7 @@ function ALUNO() {
 
 function MATHEUS() {
     linkGit = document.querySelector("#MATHEUS")
-    linkGit.innerText = "https://matheusbrazetec.github.io/perfil"
+    linkGit.innerHTML = '<a href="https://matheusbrazetec.github.io/perfil">https://matheusbrazetec.github.io/perfil</a>';
 }
 
 function JOAO_MIGUEL() {
@@ -53,12 +53,12 @@ function GUILHERME() {
 
 function GUSTAVO_GONCALVES() {
     linkGit = document.querySelector("#GUSTAVO_GONCALVES")
-    linkGit.innerText = "https://github.com/Gugagla/Gugagla"
+    linkGit.innerHTML = '<a href="https://github.com/Gugagla/Gugagla">https://github.com/Gugagla/Gugagla</a>'
 }
 
-function JHOEL_RAYAN(){
-    linkGit = document.querySelector("#JHOEL_RAYAN")
-    linkGit.innerText = "<a href='https://github.com/JhoelSoliz'>https://github.com/JhoelSoliz</a>"
+function JHOEL(){
+    linkGit = document.querySelector("#JHOEL")
+    linkGit.innerHTML = "<a href='https://github.com/JhoelSoliz'>https://github.com/JhoelSoliz</a>"
 }
 
 function ERIC() {
@@ -123,4 +123,19 @@ function VINICIUS_TAVARES() {
 function CARLOS() {
     linkGit = document.querySelector("#CARLOS")
     linkGit.innerHTML = '<a href="https://github.com/OliveiraCrl">https://github.com/OliveiraCrl</a>'
+}
+      
+function RICARDO() { 
+  linkGit = document.querySelector("#RICARDO")
+  linkGit.innerHTML = 'https://github.com/ricardorosa123'
+}
+
+function GUSTAVO_SOARES() {
+    linkGit = document.querySelector("#GUSTAVO_SOARES")
+    linkGit.innerText = '<a href="https://github.com/Shockraa">https://github.com/Shockraa</a>'
+ }
+
+function GLEYCI() {
+    linkGit = document.querySelector("#GLEYCI")
+    linkGit.innerText = "https://github.com/GleyciFerreira"
 }
