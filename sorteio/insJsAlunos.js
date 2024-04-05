@@ -30,5 +30,5 @@ function GUILHERME() {
 
 function DIMITRY() {
     linkGit = document.querySelector("#DIMITRY")
-    linkGit.innerHTML = "https://github.com/dymendes"
+    linkGit.innerHTML = "https://github.com/dymende"
 }
