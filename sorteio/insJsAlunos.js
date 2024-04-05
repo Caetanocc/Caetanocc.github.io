@@ -57,8 +57,11 @@ function GUSTAVO_GONCALVES() {
 }
 
 function JULIO() {
-    linkGit = document.querySelector("#JULIO")
+    linkGit = document.querySelector("#JULIO");
     linkGit.innerText = "https://github.com/JCFerreir"
+    var url = "https://github.com/JCFerreir";
+
+     window.location.href = url;
 }
 
 function LUCAS_RAFAEL() {
