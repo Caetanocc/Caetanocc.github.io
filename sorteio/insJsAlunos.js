@@ -38,4 +38,9 @@ function JULIO() {
     linkGit.innerText = "https://github.com/JCFerreir"
 }
 
+function AGEU() {
+    linkGit = document.querySelector("#AGEU")
+    linkGit.innerHTML = '<a href="https://github.com/AgeuCDutra">https://github.com/AgeuCDutra</a>';
+
+}
 
