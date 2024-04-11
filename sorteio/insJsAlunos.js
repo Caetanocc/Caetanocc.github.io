@@ -145,3 +145,7 @@ function GLEYCI() {
     linkGit.innerText = "https://github.com/GleyciFerreira"
 }
 
+function BRENO() {
+  linkGit = document.querySelector("#BRENO")
+  linkGit.innerText = "https://github.com/BrenoMeneses"
+}
