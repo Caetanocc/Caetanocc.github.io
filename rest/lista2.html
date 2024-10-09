@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregação por Nome</title>
+</head>
+<body>
+    <h1>Agregação por Nome</h1>
+    <div id="aggregatedContent"></div>
+
+    <script>
+        function fetchData(url, callback) {
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    callback(JSON.parse(xhr.responseText));
+                }
+            };
+            xhr.open("GET", url, true);
+            xhr.send();
+        }
+
+        function aggregateByName(data) {
+            var aggregatedData = {};
+
+            if (typeof data !== 'object' || data === null) {
+                console.error("Os dados recebidos não são um objeto JSON válido.");
+                return;
+            }
+
+            var dataArray = Object.entries(data);
+
+            dataArray.forEach(function([key, value]) {
+                var nome = value.nome;
+                if (!aggregatedData[nome]) {
+                    aggregatedData[nome] = { count: 0, items: [] };
+                }
+                aggregatedData[nome].count++;
+                aggregatedData[nome].items.push(value);
+            });
+
+            var aggregatedContent = document.getElementById("aggregatedContent");
+            aggregatedContent.innerHTML = ''; // Limpar o conteúdo antes de atualizar
+
+            for (var nome in aggregatedData) {
+                if (aggregatedData.hasOwnProperty(nome)) {
+                    var div = document.createElement("div");
+                    div.innerHTML = "<h2>" + nome + " (" + aggregatedData[nome].count + " itens)</h2>";
+                    var ul = document.createElement("ul");
+                    aggregatedData[nome].items.forEach(function(item) {
+                        var li = document.createElement("li");
+                        li.textContent = JSON.stringify(item);
+                        ul.appendChild(li);
+                    });
+                    div.appendChild(ul);
+                    aggregatedContent.appendChild(div);
+                }
+            }
+        }
+
+        function refreshData() {
+            var firebaseURL = "https://etec24-3dc8c-default-rtdb.firebaseio.com/game.json";
+            fetchData(firebaseURL, aggregateByName);
+        }
+
+        // Chamar a função inicialmente para carregar os dados
+        refreshData();
+
+        // Chamar a função a cada 5 segundos para atualizar os dados
+        setInterval(refreshData, 5000);
+    </script>
+</body>
+</html>
