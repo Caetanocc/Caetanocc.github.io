@@ -6,7 +6,7 @@
     <title>Agregação por Nome</title>
 </head>
 <body>
-    <h1>Agregação por Nome</h1>
+    <h1>Alunos - Aula IP </h1>
     <div id="aggregatedContent"></div>
 
     <script>
@@ -21,6 +21,9 @@
             xhr.send();
         }
 
+        var firebaseURL = "https://etec24-3dc8c-default-rtdb.firebaseio.com/game.json";
+
+
         function aggregateByName(data) {
             var aggregatedData = {};
 
@@ -33,7 +36,7 @@
 
             dataArray.forEach(function([key, value]) {
                 var nome = value.nome;
-                var datanasc = value.datanasc;
+                var datanasc = value.dtnasc;
                 if (!aggregatedData[nome]) {
                     aggregatedData[nome] = [];
                 }
@@ -58,17 +61,15 @@
                 }
             }
         }
-
         function refreshData() {
             var firebaseURL = "https://etec24-3dc8c-default-rtdb.firebaseio.com/game.json";
             fetchData(firebaseURL, aggregateByName);
+            setTimeout(refreshData, 5000); // 5000 milissegundos = 5 segundos
         }
 
         // Chamar a função inicialmente para carregar os dados
         refreshData();
 
-        // Chamar a função a cada 5 segundos para atualizar os dados
-        setInterval(refreshData, 5000);
     </script>
 </body>
 </html>
