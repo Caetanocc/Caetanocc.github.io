@@ -23,7 +23,7 @@ alunos.forEach( (element, index) => {
     seq = index+1
     text += "<tr><td>" + seq + "</td>";
     text += "<td>" + element + "</td>"
-    text += '<td><img class="img_al" src="' + element + '.gif" alt="' + element + '"' + "</td>";
+    text += '<td><img class="img_al" src="' + seq + '.gif" alt="' + element + '"' + "</td>";
     // text += '<td id="' + element + '" onClick="+ ' + element + '()"  >' + element + " </td>"
     text += "</tr>";
 });
@@ -61,7 +61,7 @@ function sortear() {
         seq = element+1
         text += "<tr><td>" + seq + "</td>";
         text += "<td>" + alunos[element] + "</td>";
-        text += '<td><img class="img_al" src="' + alunos[element] + '.gif" alt="' + element + '"';
+        text += '<td><img class="img_al" src="' + seq + '.gif" alt="' + element + '"';
         text += "</tr>";
     });
     
@@ -74,7 +74,7 @@ function sortear() {
         seq = index+1
         text += "<tr><td>" + seq + "</td>";
         text += "<td>" + element + "</td>";
-        text += '<td><img class="img_al" src="' + element + '.gif" alt="' + element + '"' + " </td>";
+        text += '<td><img class="img_al" src="' + seq + '.gif" alt="' + element + '"' + " </td>";
         // text += '<td id="' + element + '" onClick="+ ' + element + '()"  >' + element + " </td>"
         text += "</tr>";
     });
