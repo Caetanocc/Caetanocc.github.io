@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteio de Amigo Secreto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+            background-image: url('seu-fundo-natalino.jpg'); /* Substitua 'seu-fundo-natalino.jpg' pelo caminho da sua imagem de fundo */
+            background-size: cover;
+            color: #fff; /* Cor do texto para melhor visibilidade na imagem de fundo */
+        }
+
+        button {
+            background-color: #dc3545; /* Cor de fundo do botão */
+            color: #fff; /* Cor do texto do botão */
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        button:hover {
+            background-color: #c82333; /* Cor de fundo do botão ao passar o mouse */
+        }
+        
+        #resultado {
+            margin-top: 20px;
+        }
+
+        table {
+            margin: 20px auto; /* Centraliza a tabela */
+            border-collapse: collapse;
+            width: 40%;
+        }
+
+        th, td {
+            padding: 15px; /* Aumenta o tamanho do padding */
+            border: 1px solid #fff;
+            font-size: 18px; /* Aumenta o tamanho da fonte */
+            color: #fff; /* Cor do texto dentro das células */
+        }
+
+        th {
+            background-color: #dc3545; /* Cor de fundo do cabeçalho da tabela */
+        }
+
+        td {
+            background-color: #343a40; /* Cor de fundo das células da tabela */
+        }
+    </style>
+</head>
+<body>
+    <h1>Sorteio de Amigo Secreto</h1>
+    <button onclick="realizarSorteio()">Realizar Sorteio</button>
+    <div id="resultado"></div>
+
+    <script>
+        // Array com os nomes dos participantes
+        let participantes = ["Pessoa1", "Pessoa2", "Pessoa3", "Pessoa4", "Pessoa5"];
+
+        // Índice do participante atual
+        let indiceParticipanteAtual = 0;
+
+        // Função para realizar o sorteio
+        function realizarSorteio() {
+            const resultadoDiv = document.getElementById("resultado");
+
+            // Exibir o participante atual em uma tabela
+            let tabelaResultados = "<h2>Próximo Participante:</h2><table>";
+            tabelaResultados += "<tr><th>Participante</th></tr>";
+            tabelaResultados += `<tr><td>${participantes[indiceParticipanteAtual]}</td></tr>`;
+            tabelaResultados += "</table>";
+
+            resultadoDiv.innerHTML = tabelaResultados;
+
+            // Avançar para o próximo participante na sequência
+            indiceParticipanteAtual = (indiceParticipanteAtual + 1) % participantes.length;
+        }
+    </script>
+</body>
+</html>
