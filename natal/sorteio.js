@@ -1,17 +1,14 @@
 const alunos = 
 [
-  'Miro'   
- ,'Tania' 
+  'Tania' 
  ,'Ju' 
  ,'Sérgio' 
  ,'Marcos' 
  ,'Debora'
  ,'Sara'
  ,'Miguel'
- ,'Berenice'
- ,'Moises'
  ,'Vitor'
- ,'Davi'
+ ,'Kaua'
  
 ]
 
