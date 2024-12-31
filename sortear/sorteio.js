@@ -21,6 +21,21 @@ let alunos = []
 let fotos = []
 let sorteados = [];
 
+let btnin = document.querySelector("#btnIniciar")
+btnin.addEventListener('click', loadUsers)
+
+let btn1 = document.querySelector("#btnSortear1")
+btn1.addEventListener('click', sortear)
+let btn2 = document.querySelector("#btnSortear2")
+btn2.addEventListener('click', sortear)
+let btn3 = document.querySelector("#btnSortear3")
+btn3.addEventListener('click', sortear)
+let btn4 = document.querySelector("#btnSortear4")
+btn4.addEventListener('click', sortear)
+
+let win = document.getElementById("winner");
+
+
 listarPessoas()
 
 function listarPessoas() {
@@ -66,6 +81,8 @@ function loadUsers() {
 
     if (! confirm("Reiniciar o jogo! Tem Certeza?")) return
 
+    win.className = win.className.replace("show", "");
+
     let text = '<table id="t01"> ';
 
     alunos.sort()
@@ -87,19 +104,6 @@ function loadUsers() {
     sorteados = [];
 }
 
-let btnin = document.querySelector("#btnIniciar")
-btnin.addEventListener('click', loadUsers)
-
-let btn1 = document.querySelector("#btnSortear1")
-btn1.addEventListener('click', sortear)
-let btn2 = document.querySelector("#btnSortear2")
-btn2.addEventListener('click', sortear)
-let btn3 = document.querySelector("#btnSortear3")
-btn3.addEventListener('click', sortear)
-let btn4 = document.querySelector("#btnSortear4")
-btn4.addEventListener('click', sortear)
-
-
 function numero_aleatorio() {
     let qtdealunos = alunos.length;
     //let aleatorio = Math.floor(Math.random() * qtdealunos);
@@ -110,6 +114,18 @@ function numero_aleatorio() {
             sorteados.push(aleatorio);
             return aleatorio
         }
+    }
+}
+
+function isWiner(ind) {
+    if (alunos.length == sorteados.length) {
+        console.log("Vencedor@  : " + alunos[ind])
+
+        win.innerHTML = alunos[ind] + ' venceu $$$'
+        win.className = "show";
+
+        //setTimeout(function() { x.className = x.className.replace("show", ""); }, 7000);
+    
     }
 }
 
@@ -152,6 +168,8 @@ function mostrarSorteado(sorteado) {
     x.innerHTML = alunos[sorteado]
     x.className = "show";
     setTimeout(function() { x.className = x.className.replace("show", ""); }, 7000);
+
+    isWiner(sorteado)
 }    
 
 

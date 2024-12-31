@@ -40,3 +40,22 @@
     to {bottom: 0; opacity: 0;}
   }
   
+  #winner {
+    visibility: hidden;
+    min-width: 500px;
+    margin-left: -125px;
+    background-color: rgb(198, 19, 204);
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 650px;
+    font-size: 32px;
+  }
+
+  #winner.show {
+    visibility: visible;
+  }
