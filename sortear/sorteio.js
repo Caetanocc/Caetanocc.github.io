@@ -1,24 +1,27 @@
-import { db } from './firebase/config.js';
-import { collection, query, where, getDocs } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-firestore.js";
+// import { db } from './firebase/config.js';
+// import { collection, query, where, getDocs } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-firestore.js";
 
-const fetchItems = async () => {
-    const q = query(collection(db, "users"));
-    const querySnapshot = await getDocs(q);
-    let ItemList = [];
-    querySnapshot.forEach((doc) => {
-        ItemList.push({ id: doc.id, ...doc.data() });
-    });
-    setItems(ItemList);
-};
+// const fetchItems = async () => {
+//     const q = query(collection(db, "users"));
+//     const querySnapshot = await getDocs(q);
+//     let ItemList = [];
+//     querySnapshot.forEach((doc) => {
+//         ItemList.push({ id: doc.id, ...doc.data() });
+//     });
+//     setItems(ItemList);
+// };
 
-// Carregar os itens ao montar o componente
-useEffect(() => {
-    fetchItems();
-    loadUsers();
-}, [uid]);
+// // Carregar os itens ao montar o componente
+// useEffect(() => {
+//     fetchItems();
+//     loadUsers();
+// }, [uid]);
 
-alunos = []
-//listarPessoas()
+let alunos = []
+let fotos = []
+let sorteados = [];
+
+listarPessoas()
 
 function listarPessoas() {
     const url = `https://etec24-3dc8c-default-rtdb.firebaseio.com/pessoas.json`;
@@ -44,6 +47,7 @@ function listarPessoas() {
                     let item = dados[_id];
 
                     alunos.push( `${item.Nome}`)
+                    fotos.push( `${item.foto}`)
 
                     console.log ( _id + ' ' +  `${item.Nome}`) 
 
@@ -58,16 +62,21 @@ function listarPessoas() {
 }
 
 
-// alunos.sort()
 function loadUsers() {
+
+    if (! confirm("Reiniciar o jogo! Tem Certeza?")) return
+
     let text = '<table id="t01"> ';
+
+    alunos.sort()
+
     alunos.forEach( (element, index) => {
         console.log('alunos ' + element )
 
         seq = index+1
         text += "<tr><td>" + seq + "</td>";
         text += "<td>" + element + "</td>";
-        text += '<td><img class="img_al" src="' + element + '.gif" alt="' + element + '"' + " </td>";
+        //text += '<td><img class="img_al" src="' + fotos[index] + '" alt="' + index + '"' + " </td>";
         text += "</tr>";
     });
     
@@ -75,12 +84,21 @@ function loadUsers() {
     document.getElementById("lista").innerHTML = text;
     
     console.log ( text ) 
+    sorteados = [];
 }
 
-let btn = document.querySelector("#btnSortear")
-btn.addEventListener('click', sortear)
+let btnin = document.querySelector("#btnIniciar")
+btnin.addEventListener('click', loadUsers)
 
-let sorteados = [];
+let btn1 = document.querySelector("#btnSortear1")
+btn1.addEventListener('click', sortear)
+let btn2 = document.querySelector("#btnSortear2")
+btn2.addEventListener('click', sortear)
+let btn3 = document.querySelector("#btnSortear3")
+btn3.addEventListener('click', sortear)
+let btn4 = document.querySelector("#btnSortear4")
+btn4.addEventListener('click', sortear)
+
 
 function numero_aleatorio() {
     let qtdealunos = alunos.length;
@@ -104,7 +122,7 @@ function sortear() {
         seq = element+1
         text += "<tr><td>" + seq + "</td>";
         text += "<td>" + alunos[element] + "</td>";
-        text += '<td><img class="img_al" src="' + alunos[element] + '.gif" alt="' + element + '"';
+        //text += '<td><img class="img_al" src="' + fotos[element] + '" alt="' + element + '"';
         text += "</tr>";
     });
     
@@ -117,7 +135,7 @@ function sortear() {
         seq = index+1
         text += "<tr><td>" + seq + "</td>";
         text += "<td>" + element + "</td>";
-        text += '<td><img class="img_al" src="' + element + '.gif" alt="' + element + '"' + " </td>";
+        //text += '<td><img class="img_al" src="' + fotos[index] + '" alt="' + element + '"' + " </td>";
         text += "</tr>";
     });
     
@@ -133,7 +151,7 @@ function mostrarSorteado(sorteado) {
     let x = document.getElementById("snackbar");
     x.innerHTML = alunos[sorteado]
     x.className = "show";
-    setTimeout(function() { x.className = x.className.replace("show", ""); }, 3000);
+    setTimeout(function() { x.className = x.className.replace("show", ""); }, 7000);
 }    
 
 

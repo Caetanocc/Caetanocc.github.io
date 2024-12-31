@@ -1,9 +1,32 @@
 .botao {
-    background-color: rgb(115, 255, 0);
-    color: rgb(255, 0, 64);
+    background-color: rgb(255, 0, 0);
+    color: rgb(24, 23, 24);
     font-size: 20px;
   }  
+
   
+  .botao3 {
+    background-color: rgb(43, 0, 255);
+    color: rgb(243, 249, 249);
+    font-size: 20px;
+  }  
+  .botao4 {
+    background-color: rgb(255, 0, 30);
+    color: rgb(13, 12, 13);
+    font-size: 20px;
+  }  
+  .botao2 {
+    background-color: rgb(115, 255, 0);
+    color: rgb(225, 255, 0);
+    font-size: 20px;
+  }  
+  .botao1 {
+    background-color: rgb(255, 234, 0);
+    color: rgb(0, 26, 255);
+    font-size: 20px;
+  }  
+
+
 body {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -55,4 +78,9 @@ td {
 .img_al {
   width:100px;
   height:100px;
+}
+
+.img_a2 {
+  width:500px;
+  height:300px;
 }
