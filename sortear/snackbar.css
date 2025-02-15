@@ -1,0 +1,61 @@
+#snackbar {
+    visibility: hidden;
+    min-width: 500px;
+    margin-left: -125px;
+    background-color: rgb(19, 204, 22);
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 650px;
+    font-size: 32px;
+  }
+  
+  #snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.8s 2.5s;
+    animation: fadein 0.5s, fadeout 0.8s 2.5s;
+  }
+  
+  @-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 650px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 650px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {bottom: 650px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 650px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  #winner {
+    visibility: hidden;
+    min-width: 500px;
+    margin-left: -125px;
+    background-color: rgb(198, 19, 204);
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 650px;
+    font-size: 32px;
+  }
+
+  #winner.show {
+    visibility: visible;
+  }

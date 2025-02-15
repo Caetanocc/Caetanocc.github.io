@@ -1,0 +1,86 @@
+.botao {
+    background-color: rgb(255, 0, 0);
+    color: rgb(24, 23, 24);
+    font-size: 20px;
+  }  
+
+  
+  .botao3 {
+    background-color: rgb(43, 0, 255);
+    color: rgb(243, 249, 249);
+    font-size: 20px;
+  }  
+  .botao4 {
+    background-color: rgb(255, 0, 30);
+    color: rgb(13, 12, 13);
+    font-size: 20px;
+  }  
+  .botao2 {
+    background-color: rgb(115, 255, 0);
+    color: rgb(225, 255, 0);
+    font-size: 20px;
+  }  
+  .botao1 {
+    background-color: rgb(255, 234, 0);
+    color: rgb(0, 26, 255);
+    font-size: 20px;
+  }  
+
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+    background-image: url('fundo-natalino.jpg'); /* Substitua 'seu-fundo-natalino.jpg' pelo caminho da sua imagem de fundo */
+    background-size: cover;
+    color: #fff; /* Cor do texto para melhor visibilidade na imagem de fundo */
+}
+
+button {
+    background-color: #dc3545; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+button:hover {
+    background-color: #c82333; /* Cor de fundo do botão ao passar o mouse */
+}
+
+#resultado {
+    margin-top: 20px;
+}  
+
+table {
+  margin: 20px auto; /* Centraliza a tabela */
+  border-collapse: collapse;
+  width: 80%;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #fff;
+  font-size: 18px; /* Aumenta o tamanho da fonte */
+  color: #fff; /* Cor do texto dentro das células */
+}
+
+th {
+  background-color: #dc3545; /* Cor de fundo do cabeçalho da tabela */
+  color: #fff;
+}
+
+td {
+  background-color: #004b09; /* Cor de fundo das células da tabela */
+}
+
+.img_al {
+  width:100px;
+  height:100px;
+}
+
+.img_a2 {
+  width:500px;
+  height:300px;
+}
