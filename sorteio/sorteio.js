@@ -1,6 +1,6 @@
 const alunos = 
 [
-  'ALUNO'   
+ 'ALUNO'   
 ,'AGHATA'   
 ,'ANGELO'   
 ,'CAIQUE'   
@@ -29,7 +29,6 @@ const alunos =
 ,'RAFFAELA'
 ,'RONALDO'
 ,'VICTOR'
- 
 ]
 
 // alunos.sort()
