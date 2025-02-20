@@ -1,7 +1,7 @@
 const alunos = 
 [
-  'ALUNO'   
- ,'AGHATA' 
+  'PEDRO_CARDOSO',
+  
  
 ]
 
