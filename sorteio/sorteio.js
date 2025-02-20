@@ -1,8 +1,10 @@
+/* https://drive.google.com/file/d/0B9eZlIWAs3-sN3NRbktQNVFUN3l2cTBBcXN4Y3FaUQ/view?resourcekey=0-ZafqCRtyIP8Zw0CKviW5Gw */
+
 const alunos = 
 [
-  'ALUNO'   
- ,'AGHATA' 
- 
+  'ALUNO',
+  'AGHATA',
+  'LEONARDO'
 ]
 
 // alunos.sort()
