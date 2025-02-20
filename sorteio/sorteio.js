@@ -1,10 +1,36 @@
+/* https://drive.google.com/file/d/0B9eZlIWAs3-sN3NRbktQNVFUN3l2cTBBcXN4Y3FaUQ/view?resourcekey=0-ZafqCRtyIP8Zw0CKviW5Gw */
+
 const alunos = 
 [
-  'ALUNO'   
- ,'AGHATA' 
- ,'FABRICIO'
- 
- 
+ 'ALUNO'   
+,'AGHATA'   
+,'ANGELO'   
+,'CAIQUE'   
+,'DIEGO'   
+,'EDUARDO'  
+,'FABRICIO' 
+,'FELIPE' 
+,'GABRIEL_SANTOS'
+,'GABRIEL_ALMEIDA'
+,'GABRIEL_MENDES'
+,'GABRIEL_ISCHIAVOLINI'
+,'GIANLUCA'
+,'GUILHERME_AZEVEDO'
+,'GUILHERME_LIMA'
+,'GUSTAVO_FERREIRA'
+,'GUSTAVO_NEVES'
+,'GUSTAVO_PEREIRA'
+,'GUSTAVO_TORELLI'
+,'JUAN'
+,'KAUE'
+,'LEONARDO'
+,'LUIS'
+,'PEDRO_VIEIRA'
+,'PEDRO_NUNES'
+,'RAFAEL'
+,'RAFFAELA'
+,'RONALDO'
+,'VICTOR'
 ]
 
 // alunos.sort()
