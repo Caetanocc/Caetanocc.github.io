@@ -32,3 +32,8 @@ function LEONARDO() {
   linkGit = document.querySelector("#LEONARDO")
   linkGit.innerHTML = "<a href=\"https://www.youtube.com/watch?v=LzzW_TBL558\" target=\"blank\">U u wa wa uwa</a>"
 }
+
+function GUSTAVO_TORELLI() {
+  linkGit = document.querySelector("#GUSTAVO_TORELLI")
+  linkGit.innerHTML = <a href= "https://github.com/GuTorelli">https://github.com/GuTorelli</a>
+}
