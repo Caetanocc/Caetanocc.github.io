@@ -42,7 +42,14 @@ function ALUNO() {
   linkGit.innerText = "https://www.linkedin.com/in/lu%C3%ADs-rangel-a95991248?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
 }
 
+
+function GUSTAVO_TORELLI() {
+  linkGit = document.querySelector("#GUSTAVO_TORELLI")
+  linkGit.innerHTML = <a href= "https://github.com/GuTorelli">https://github.com/GuTorelli</a>
+}
+
   function PEDRO_VIEIRA() {
   linkGit = document.querySelector("#PEDRO_VIEIRA")
   linkGit.innerHTML = <a href ="https://www.lance.com.br/palmeiras/palmeiras-vence-de-virada-com-brilho-de-estevao-e-segue-vivo-no-paulistao.html" > "https://www.lance.com.br/palmeiras/palmeiras-vence-de-virada-com-brilho-de-estevao-e-segue-vivo-no-paulistao.html"</a>
 }
+
