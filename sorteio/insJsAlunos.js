@@ -5,6 +5,6 @@ function ALUNO() {
 
 function GUSTAVO_PEREIRA() {
   linkGit = document.querySelector("#GUSTAVO_PEREIRA")
-  linkGit.innerText = "https://github.com/Gustavo-Pereira-Carvalho"
+  linkGit.innerHTML = <a href="https://github.com/Gustavo-Pereira-Carvalho">"https://github.com/Gustavo-Pereira-Carvalho"</a> 
 }
 
