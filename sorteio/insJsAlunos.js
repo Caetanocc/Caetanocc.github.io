@@ -32,3 +32,7 @@ function LEONARDO() {
   linkGit = document.querySelector("#LEONARDO")
   linkGit.innerHTML = "<a href=\"https://www.youtube.com/watch?v=LzzW_TBL558\" target=\"blank\">U u wa wa uwa</a>"
 }
+function PEDRO_VIEIRA() {
+  linkGit = document.querySelector("#PEDRO_VIEIRA")
+  linkGit.innerHTML = <a href ="https://www.lance.com.br/palmeiras/palmeiras-vence-de-virada-com-brilho-de-estevao-e-segue-vivo-no-paulistao.html" > "https://www.lance.com.br/palmeiras/palmeiras-vence-de-virada-com-brilho-de-estevao-e-segue-vivo-no-paulistao.html"</a>
+}
