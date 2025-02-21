@@ -4,6 +4,6 @@ function ALUNO() {
 }
 function FABRICIO() {
   linkGit = document.querySelector("#FABRICIO")
-  linkGit.innerText = "https://www.youtube.com/watch?v=LVE17tSApHI"
+  linkGit.innerText = "https://www.youtube.com/watch?v=CNw_8px5C4w"
 }
 
