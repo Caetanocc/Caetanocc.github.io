@@ -37,6 +37,10 @@ function LEONARDO() {
   linkGit = document.querySelector("#LEONARDO")
   linkGit.innerHTML = "<a href=\"https://www.youtube.com/watch?v=LzzW_TBL558\" target=\"blank\">U u wa wa uwa</a>"
 }
+function ALUNO() {
+  linkGit = document.querySelector("#LUIS")
+  linkGit.innerText = "https://www.linkedin.com/in/lu%C3%ADs-rangel-a95991248?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+}
 
 function PEDRO_NUNES() {
   linkGit = document.querySelector("#PEDRO_NUNES")
