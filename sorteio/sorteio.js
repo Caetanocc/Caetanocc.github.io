@@ -2,6 +2,7 @@
 
 const alunos = 
 [
+
  'ALUNO'   
 ,'AGHATA'   
 ,'ANGELO'   
@@ -31,7 +32,7 @@ const alunos =
 ,'RAFFAELA'
 ,'RONALDO'
 ,'VICTOR'
-]
+ ]
 
 // alunos.sort()
 
@@ -113,4 +114,4 @@ function mostrarSorteado(sorteado) {
 }    
 
 
-
+//oi
