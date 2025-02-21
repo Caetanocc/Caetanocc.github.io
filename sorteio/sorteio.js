@@ -108,7 +108,8 @@ function mostrarSorteado(sorteado) {
     x.innerHTML = alunos[sorteado]
     x.className = "show";
     setTimeout(function() { x.className = x.className.replace("show", ""); }, 3000);
-}    
+} 
+   
 
 
 
