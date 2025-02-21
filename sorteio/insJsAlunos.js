@@ -3,6 +3,11 @@ function ALUNO() {
   linkGit.innerText = "https://caetanocc.github.io/perfil"
 }
 
+function RAFFAELA(){
+  linkGit = document.querySelector("#RAFFAELA")
+  linkGit.innerHTML = "https://www.java.com/pt-BR/download/help/whatis_java.html"
+}
+
 function GABRIEL_ISCHIAVOLINI() {
   linkGit = document.querySelector("#GABRIEL_ISCHIAVOLINI")
   linkGit.innerText = "https://github.com/Bielmonge"
